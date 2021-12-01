@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma's Taro Web</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="title"></div>
+      <div class="nav">
+        <ul>
+          <li>
+            <!-- <a href="#" onclick="goToAnchor('.section_contact')"> -->
+            <a href="#section_contact">
+              與我聯絡
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- <a href="#" class="btn btn--white">與我聯絡</a> -->
+        <!-- <ul>
+          <li>
+            <a href="#">與我聯絡<span></span><span></span></a>
+          </li>
+        </ul> -->
+      </div>
+    </header>
+    <main>
+      <section class="section_message">
+        <div id="message_1">
+          <h1>請靜下心來，<br />在不受干擾的環境下選牌</h1>
+        </div>
+      </section>
+      <section class="section_cards">
+        <div id="center_cards"></div>
+        <div id="target_cards">
+          <!-- <div id="test_card" style="position:absolute; left:1000px;top:100px;
+        width:300px; height:300px; background-color:green" >  -->
+        </div>
+        <!-- <a href="#" class="btn btn--white">與我聯絡</a> -->
+      </section>
+      <section class="section_contact" id="section_contact">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form id="contact_form" action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">與我聯絡</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="請問如何稱呼您 ?"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">您的名字</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="請填入您的聯絡方式 (Email, Line 或 Facebook) !"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label"
+                    >您的 Email address</label
+                  >
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="請填入您想問的問題 !"
+                    id="question"
+                    required
+                  />
+                  <label for="question" class="form__label">您的問題</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="請填入您的抽牌結果 !"
+                    id="pick_card_result"
+                    required
+                  />
+                  <label for="pick_card_result" class="form__label"
+                    >您的抽牌結果</label
+                  >
+                </div>
+
+                <div class="form__group">
+                  <!-- <button class="btn btn--white" onclick="submitHandler()"> -->
+                  <button class="btn btn--white" id="submit">
+                    送出 &rarr;
+                  </input>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          emailjs.init('user_d8Jvkn8WhOUSggJeOTbqa');
+      })();
+  </script>  
+  <script src="./scripts/card_info.js"></script>
+  <script src="./scripts/script.js"></script>
+</html>
