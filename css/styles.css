@@ -42,7 +42,7 @@
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 50%;
   }
@@ -61,6 +61,12 @@ header {
   background-color: var(--nav-color);
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    background-color: red;
+  }
 }
 
 .logo {
@@ -98,7 +104,7 @@ header {
   height: 8vh;
   width: 15vw;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   nav {
     width: 20vw;
   }
@@ -113,7 +119,7 @@ main {
   background-size: cover;
   background-position: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   main {
     background-image: var(--background-small-image);
     background-size: cover;
@@ -184,7 +190,7 @@ h1 {
   transition: all 0.2s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .btn {
     font-size: 2rem;
   }
@@ -254,7 +260,7 @@ a {
   background-color: var(--logo-color);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   a {
     font-size: 1rem;
   }
