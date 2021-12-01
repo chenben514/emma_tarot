@@ -363,39 +363,8 @@ for (let i = 0; i < cardCount; i++) {
 }
 shuffle(cardPos);
 
-function submitHandler() {
-  document
-    .getElementById("contact_form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
-      // generate a five digit number for the contact_number variable
-      this.contact_number.value = (Math.random() * 100000) | 0;
-      // these IDs from the previous steps
-      emailjs.sendForm("contact_service", "contact_form", this).then(
-        function () {
-          console.log("SUCCESS!");
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
-    });
-  goToAnchor("header");
-
-  // var to = "chungben@hotmail.com"; //寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
-  // //把user填的資料都塞到 mail body 中
-  // let body = "聯絡人：" + $("#name").val() + "%0A";
-  // body += "聯絡方式：" + $("#email").val() + "%0A";
-  // body += "問題：" + $("#question").val() + "%0A";
-  // body += "抽牌結果：" + $("#pick_card_result").val();
-  // //傳送的主要程式碼
-  // mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
-  // mailTo.click();
-}
-
 window.onload = function () {
-  document.getElementById("submit").addEventListener("click", function (event) {
-    // alert("benben");
+  document.getElementById("send").addEventListener("click", function (event) {
     // event.preventDefault();
     // generate a five digit number for the contact_number variable
     // these IDs from the previous steps
@@ -427,9 +396,7 @@ window.onload = function () {
       }
     );
   });
-};
 
-window.onload = function () {
   document.getElementById("back").addEventListener("click", function (event) {
     window.scrollTo(1000, 1000);
   });
