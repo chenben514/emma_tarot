@@ -320,7 +320,10 @@ function finalShow() {
     console.log("i:" + i + " targetCardCount:" + targetCardCount);
     if (i == Math.floor(targetCardCount / 2)) {
       btnTopStr = finalTextTop + 20 + finalTextHeight + "px;";
-      btnLeftStr = finalTextLeft - 50 + "px;";
+
+      if (windowWidth < 900 || windowHeight < 600)
+        btnLeftStr = finalTextLeft - 20 + "px;";
+      else btnLeftStr = finalTextLeft - 50 + "px;";
     }
   }
   // 3.把所有選牌隱藏
@@ -403,13 +406,31 @@ window.onload = function () {
       pick_card_result: $("#pick_card_result").val(),
     };
 
+    if ($("#name").val().length === 0) {
+      alert("未填您的稱呼");
+      return;
+    }
+
+    if ($("#email").val().length === 0) {
+      alert("未填您的聯絡方式");
+      return;
+    }
+
     emailjs.send("service_h6qkwrl", "template_qvkthmf", templateParams).then(
       function () {
         console.log("SUCCESS!");
+        alert("已成功送出");
       },
       function (error) {
         console.log("FAILED...", error);
+        alert("傳送失敗:" + error);
       }
     );
+  });
+};
+
+window.onload = function () {
+  document.getElementById("back").addEventListener("click", function (event) {
+    window.scrollTo(1000, 1000);
   });
 };
