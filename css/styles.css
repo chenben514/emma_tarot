@@ -95,18 +95,13 @@ header {
 }
 
 .nav {
-  /* background-color: var(--nav-color); */
   height: 8vh;
   width: 15vw;
-
-  /* border-radius: 10%; */
-  /* border-bottom: 3px solid white; */
-
-  /* 影像縮小，不重覆置中 */
-  /* background-image: var(--contact_me-image);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 20vw;
+  }
 }
 
 main {
@@ -176,10 +171,12 @@ h1 {
 /* X. 按鈕特效 */
 .btn {
   position: absolute;
+  /* position: absolute; */
   text-decoration: none;
   text-transform: uppercase;
   /* padding: 25px 50px; */
-  padding: 5px 50px;
+  padding: 0.5% 5%;
+  /* padding: 5px 50px; */
   background-color: var(--btn-color);
   color: #fff;
   border-radius: 100px;
@@ -187,9 +184,24 @@ h1 {
   transition: all 0.2s;
 }
 
+@media only screen and (max-width: 600px) {
+  .btn {
+    font-size: 2rem;
+  }
+}
+
+.btn--2-1 {
+  left: 15%;
+}
+
+.btn--2-2 {
+  left: 40%;
+}
+
 .btn:before {
   content: "";
   position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -232,11 +244,20 @@ a {
   display: block;
   position: relative;
   text-decoration: none;
-  padding: 20px;
-  font-size: 22px;
-  color: white;
+  /* padding: 20px;
+  font-size: 22px; */
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 3rem;
+  color: black;
   text-transform: uppercase;
   transition: all 0.3s;
+  background-color: var(--logo-color);
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    font-size: 1rem;
+  }
 }
 
 ul:hover a {
