@@ -23,8 +23,9 @@ const showCardTime = 70; //default can set 70, for debug purpose, set to 0
 
 /* 01. 先算好的數字 ----------------------------- */
 const windowHeight = $(window).height();
-// alert(windowHeight);
+alert("windowHeight:" + windowHeight);
 const windowWidth = $(window).width();
+alert("windowWidth:" + windowWidth);
 
 let cardWidth = Number(
   getComputedStyle(document.documentElement).getPropertyValue("--card-width")
