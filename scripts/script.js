@@ -17,8 +17,8 @@ let cardBackImg = "url('../img/card_back.png')";
 const shufferX = 5;
 const shufferY = 1;
 
-const shufferRound = 0; //default can set 50, for debug purpose, set to 0
-const showCardTime = 0; //default can set 70, for debug purpose, set to 0
+const shufferRound = 5; //default can set 50, for debug purpose, set to 0
+const showCardTime = 70; //default can set 70, for debug purpose, set to 0
 /* 00.可改動區域 (結束) ------------------------ */
 
 /* 01. 先算好的數字 ----------------------------- */
