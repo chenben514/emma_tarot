@@ -257,8 +257,6 @@ $(document).on("click", ".center_card", function () {
       );
 
       $(textID).css("left", targetTextLeftStr);
-      // document.querySelector(textID).style.visibility = "visible";
-      // document.querySelector(textID).style.opacity = "1";
       if (nowTargetCount === targetCardCount) {
         finalShow();
       }
@@ -361,46 +359,6 @@ for (let i = 0; i < cardCount; i++) {
   cardReverse.push(Math.floor(Math.random() * 2));
 }
 shuffle(cardPos);
-
-// window.onload = function () {
-//   document.getElementById("send").addEventListener("click", function (event) {
-//     // event.preventDefault();
-//     // generate a five digit number for the contact_number variable
-//     // these IDs from the previous steps
-//     console.log("send click");
-//     let templateParams = {
-//       name: $("#name").val(),
-//       email: $("#email").val(),
-//       question: $("#question").val(),
-//       pick_card_result: $("#pick_card_result").val(),
-//     };
-
-//     if ($("#name").val().length === 0) {
-//       alert("未填您的稱呼");
-//       return;
-//     }
-
-//     if ($("#email").val().length === 0) {
-//       alert("未填您的聯絡方式");
-//       return;
-//     }
-//     console.log("email send");
-//     emailjs.send("service_h6qkwrl", "template_qvkthmf", templateParams).then(
-//       function () {
-//         console.log("SUCCESS!");
-//         alert("已成功送出");
-//       },
-//       function (error) {
-//         console.log("FAILED...", error);
-//         alert("傳送失敗:" + error);
-//       }
-//     );
-//   });
-
-//   document.getElementById("back").addEventListener("click", function (event) {
-//     window.scrollTo(0, 0);
-//   });
-// };
 
 function sendMail(event) {
   event.preventDefault();
