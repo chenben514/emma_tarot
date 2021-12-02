@@ -172,7 +172,7 @@ h1 {
 }
 
 .btn--2-2 {
-  left: 40%;
+  left: 45%;
 }
 
 .btn:before {
@@ -267,7 +267,7 @@ a:hover:before {
 
 /* 與我聯絡 */
 .section_contact {
-  padding: 15rem 0;
+  padding: 5rem 0 5rem 0;
   background-image: linear-gradient(
     to right bottom,
     var(--color-primary-light),
