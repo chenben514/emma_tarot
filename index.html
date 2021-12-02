@@ -104,13 +104,18 @@
 
                 <div class="form__group">
                   <!-- <button class="btn btn--white" onclick="submitHandler()"> -->
-                  <button class="btn btn--white btn--1-2" id="send">
+                  <button
+                    class="btn btn--white btn--1-2"
+                    id="send"
+                    onclick="sendMail()"
+                  >
                     送出
                   </button>
                   <button
                     class="btn btn--white btn--2-2"
                     id="back"
                     formnovalidate
+                    onclick="returnTop()"
                   >
                     返回
                   </button>
@@ -133,5 +138,5 @@
     })();
   </script>
   <script src="./scripts/card_info_20211201_01.js"></script>
-  <script src="./scripts/script_1202_03.js"></script>
+  <script src="./scripts/script_1202_04.js"></script>
 </html>
