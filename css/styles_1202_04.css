@@ -267,7 +267,7 @@ a:hover:before {
 
 /* 與我聯絡 */
 .section_contact {
-  padding: 5rem 0 5rem 0;
+  padding: 1rem 0 5rem 0;
   background-image: linear-gradient(
     to right bottom,
     var(--color-primary-light),
